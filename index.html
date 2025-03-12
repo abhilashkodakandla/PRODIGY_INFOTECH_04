@@ -3,69 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darshan's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Abhilash Kodakandla - Web Developer</title>
+    <link rel="stylesheet" href="task4.css">
 </head>
 <body>
     <header>
         <nav>
-            <h1 class="logo"></h1> 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+            <ul>
+                <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+        <div class="hero">
+            <h1>Abhilash Kodakandla</h1>
+            <p>Web Developer | Java | IoT | SQL</p>
+        </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="content">
-            <h1>Hi, I'm Abhilash</h1>
-            <p>A Web Developer & Tech Enthusiast</p>
-            <a href="#projects" class="btn">View My Work</a>
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am an aspiring web developer with a strong foundation in front-end and back-end technologies, including HTML, CSS, JavaScript, and SQL. I am passionate about building responsive, user-friendly web applications and continuously learning new technologies to stay updated with industry trends.</p>
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Passionate about building interactive and user-friendly websites with modern technologies.</p>
-    </section>
-
-    <section id="skills">
-        <h2>My Skills</h2>
-        <div class="skills-container">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Languages: Java, HTML, CSS, JavaScript, SQL</li>
+                <li>Tools: Visual Studio Code, Git, MySQL, Node.js</li>
+                <li>Frameworks: React, Express, Bootstrap</li>
+                <li>Soft Skills: Problem-solving, Teamwork, Communication</li>
+            </ul>
         </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Tic-Tac-Toe Game</h3>
-            <p>Built an interactive tic-tac-toe game using HTML, CSS, and JavaScript.</p>
-            <a href="https://github.com/abhilashkodakandla" target="_blank" class="btn">GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Weather Application</h3>
-            <p>Built a web page that fetches weather data from a weather API based on the user's location or a user-inputted location.</p>
-            <a href="https://github.com/abhilashkodakandla" target="_blank" class="btn">GitHub</a>
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>IoT-Based Motion Detection System</h3>
+                <p>An IoT-based motion detection system using NodeMCU, PIR sensors, and Blynk app for real-time notifications.</p>
+            </div>
+            <div class="project">
+                <h3>Library Management System</h3>
+                <p>A database system for managing library books, implementing functions like book issue, return, and user management using SQL.</p>
+            </div>
+            <div class="project">
+                <h3>Smart India Hackathon Chatbot</h3>
+                <p>Developed a chatbot for museum ticket booking and query resolution using Voiceflow, as part of the Smart India Hackathon.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:akodakan@gitam.in">akodakan@gitam.in</a></p>
-        <p>GitHub: <a href="https://github.com/abhilashkodakandla" target="_blank">github.com/abhilashkodakandla</a></p>
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer>
-        <p>©️ 2025 Abhilash | Web Developer</p>
+        <p>&copy; 2025 Abhilash Kodakandla. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img src="" id="lightbox-img" alt="Image">
+    </div>
+
+    <script src="task4.js"></script>
 </body>
 </html>
